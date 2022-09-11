@@ -1,0 +1,88 @@
+:root {
+    --body: #e7f6f2;
+    --Inputs: #a5c9ca;
+    --buttons: #395b64;
+
+    --card: #a5c9ca;
+}
+.container {
+    margin: 0 12% 0 12%;
+    position: relative;
+}
+body {
+    background-color: var(--body);
+}
+
+/* aspect form */
+input[type="text"] {
+    height: 50px;
+    font-size: 30px;
+    background-color: var(--Inputs);
+}
+
+input[type="text"]:nth-child(2) {
+    height: 100px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+button {
+    height: 45px;
+    margin-bottom: 200px;
+    background-color: var(--buttons);
+    color: #fff;
+}
+.add {
+    background-color: red;
+}
+
+/* Classes of aspect form */
+
+/* ButtonForSee */
+.swipeing {
+    height: 50px;
+    /* width: 70px; */
+    border: none;
+    border-radius: 11px;
+    text-align: center;
+}
+/* aspect FlashCard */
+.FlashCard {
+    display: flex;
+    justify-content: center;
+    margin: 0 12% 0 12%;
+    position: relative;
+}
+.JustCard {
+    display: flex;
+    /* overflow-y: visible; */
+}
+.ContnetCard {
+    height: 250px;
+    width: 250px;
+    background-color: var(--card);
+    margin: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 150%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.buttonCard {
+    position: relative;
+    top: 100px;
+    height: 50px;
+    width: 70px;
+    border: none;
+    border-radius: 11px;
+}
+.nonDisply {
+    display: none;
+}
+.hide {
+    visibility: hidden;
+}
