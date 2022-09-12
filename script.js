@@ -6,7 +6,7 @@ const send = document.querySelector(".send");
 const FlashCard = document.querySelector(".FlashCard");
 const JustCard = document.querySelector(".JustCard");
 let cards = "";
-const swipeing = document.querySelector(".swipeing");
+const swipeing = document.querySelector(".swipeingBut");
 const next = document.querySelector(".next");
 const prev = document.querySelector(".prev");
 
