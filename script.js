@@ -1,3 +1,4 @@
+"use strict"
 const word = document.querySelector(".Word");
 const definig = document.querySelector(".Definig");
 const send = document.querySelector(".send");
@@ -20,14 +21,15 @@ let listBack = [];
 let getDataFont;
 let getDataBack;
 
-getDataFont = localStorage.getItem("listFont").split(",");
-getDataBack = localStorage.getItem("listBack").split(",");
+getDataFont = localStorage.getItem("listFont");
+getDataBack = localStorage.getItem("listBack");
 
-console.log(getDataFont, getDataBack);
 
-if (getDataFont[0] != "" && getDataBack[0] != "") {
-    listFont = getDataFont;
-    listBack = getDataBack;
+
+if (getDataFont!=null&& getDataBack!=null ) {
+
+    listFont = getDataFont.split(",");
+    listBack = getDataBack.split(",");
     for (let i = 0; i < listFont.length; i++) {
         contplus = i;
 
@@ -37,7 +39,6 @@ if (getDataFont[0] != "" && getDataBack[0] != "") {
     contplus++;
     cards = document.querySelectorAll(".Card");
 }
-
 if (cont === 0) {
     prev.classList.add("hide");
 }
